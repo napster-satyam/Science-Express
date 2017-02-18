@@ -1,0 +1,233 @@
+html,body {
+	font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+      height: 100%;
+      width: 100%;
+      /*background: url(images/train.jpg) no-repeat center center fixed;
+    background-size: cover;*/
+}
+
+h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 5px;
+  }
+h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+
+.container-fluid {
+      padding: 60px 50px;
+     }
+.logo {
+      color: #4caf50;
+      font-size: 200px;
+  }
+
+.bg-grey {
+      background-color: #e9e9e9;
+  }
+
+.navbar {
+      margin-bottom: 0;
+      background-color: #48435c;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      opacity: 1;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+      background-color: #564f72 !important;
+      /*animation-name: hov;
+      -webkit-animation-name: hov;
+      animation-duration: 4s;
+      -webkit-animation-duration: 4s;
+      visibility: visible;*/
+  }
+
+  @keyframes hov {
+    0% {
+      opacity: 0;
+      border-top: 2px solid yellow;
+    } 
+    100% {
+      opacity: 1;
+      border-top: 2px solid yellow;
+    }
+  }
+
+
+  .navbar-nav li.active a {
+      color: #fff;
+      background-color: #b0413e !important;
+  }
+
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+      background-color: #4caf50;
+  }
+
+  .jumbotron {
+    background-image: url("images/train.png");
+      width: 100%;
+      background-repeat: no-repeat;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+
+  .exp {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .trainimg {
+    width: 100%;
+    height: 100%;
+    background: url(images/train.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /*background-image: url("images/train.jpg");
+    background-size: cover;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+ */ }
+
+  #registration {
+    width: 100%;
+    height: 100%;
+    background: url(images/back.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+
+.Gmod{
+  /*background-color:#008080*/;
+  background: url('images/background1.jpg') no-repeat;
+  background-size: cover;
+  border-radius:8px;
+  /*position:absolute;*/
+  width:500px;
+  height:auto;
+  margin-top: 20%;
+  /*left:8%;*/
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+
+}
+/*div#header-Gmod{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top:30px; 
+    cursor: not-allowed;
+    text-align: center;
+    font-size: 25px;
+}*/
+
+#GformHeader {
+  color:#fff;
+}
+
+.input-group{
+  position: relative;
+  left: 25%;
+  margin-left: -45px;
+  margin-right: 200px;
+}
+
+.rgroup {
+  position: relative;
+  left: 0%;
+}
+
+/*input#submit-Gmod{
+  border-radius: 5px;
+  color: #470063;
+  text-align: center;
+  position: relative;
+  margin-left:5%; 
+  background-color: #fff;
+}*/
+
+.form-control{
+  -webkit-box-shadow: 0 9px 6px -6px #888888;
+       -moz-box-shadow: 0 9px 6px -6px #888888;
+            box-shadow: 0 9px 6px -6px #888888;
+}
+
+div.doctoupload{
+  position: relative;
+  left: 25%;
+  margin-left: -45px;
+  margin-right: 200px;
+}
+
+/*input[type="date"]::before { 
+  content: attr(data-placeholder);
+  
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }*/
