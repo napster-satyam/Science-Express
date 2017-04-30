@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=5">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="booking.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script> 
+	$(document).ready(function(){
+	    $("#button").click(function() {
+	  	$('.innerLiner').toggleClass('transform-active');
+		});
+	});
+	</script> 
+</head>
+<body>
+	<div class="boxx">
+		<h4 class="#4a148c purple darken-4" style="background-color: #4a148c"><< LogIn >></h4>
+
+		<div class="mycontainer">
+
+		  <div class="innerLiner">
+		    <span class="box1">
+		      <form style="margin-top: 10%;">
+					<div class="form-group" style="width: 60%; margin-bottom: 3% ;margin-left: 30%;">
+					  <input id="num" type="text" placeholder="Enter Registered Mobile Number" class="form-control" style="width:100%;">
+			          <!--<label for="num" class=" #4a148c purple-text text-darken-4">Enter Registered Mobile Number</label>-->
+			        </div>
+			        <button type="button" id="button" class="btn btn-default" style="margin-left: 30%;  margin-bottom: 10%;background-color: #4a148c; color: #fff; padding: 5px 30px 5px 25px; font-size: 17px;"><span class="glyphicon glyphicon-send" style="font-size: 15px;"></span>&nbspNext</button>
+			        
+		        </form>
+		    </span>
+
+		   
+
+		    <span class="box2">
+		      	<form style="margin-top: 10%;">
+					<div class="form-group" style="width: 60%; margin-left: 30%; margin-bottom: 3%;">
+					  <input id="otp" type="text" class="form-control" placeholder="Enter OTP received" style="width:100%;">
+			          <!--<label for="otp" class=" #4a148c purple-text text-darken-4">Enter OTP received</label>-->
+			        </div>
+			        <a href="step-3.html"><button type="button" id="button1" class="btn btn-default" style="margin-left: 30%;  margin-bottom: 10%;background-color: #4a148c; color: #fff; padding: 5px 30px 5px 25px; font-size: 17px;"><span class="glyphicon glyphicon-send" style="font-size: 15px;"></span>&nbspSubmit</button></a>
+		        </form>
+		    </span>
+		  </div>
+
+		   
+
+		</div>
+		
+
+	</div>
+</body>
+</html>

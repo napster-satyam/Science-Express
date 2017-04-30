@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Booking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=5">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="visitor-details.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="boxx">
+		<h4 class="teal-text text-lighten-1" style="background-color: #4a148c"><< Enter Details >></h4>
+
+		<div class="container-fluid ">
+		<div class="row" style="padding-left: 10px">
+			<div class="col-sm-4">
+				<label for="name">Name:</label>
+			</div>
+			<div class="col-sm-4">
+				<label for="name">Age:</label>
+			</div>
+			<div class="col-sm-4" style="padding-left: 70px;">
+				<label for="name">Gender:</label>
+			</div>
+		</div>
+		<div class="abc" style="padding: 5px;">
+		<form class="form-inline">
+		<div class="row">
+		  <div class="form-group col-sm-4">
+		    <input type="text" class="form-control" id="name">
+		  </div>
+		  <div class="form-group col-sm-4" style="">
+		    <input type="text" class="form-control" id="age">
+		  </div>
+		  <div class="form-group col-sm-4" style="padding-left: 70px;">
+		      <select class="form-control" id="gender">
+		        <option>Male</option>
+		        <option>Female</option>
+		      </select>
+		   </div>
+		   </div>
+		</form>
+		</div>
+		<div style="display: inline;">
+		<a id="add"><span class="glyphicon glyphicon-plus-sign" style="font-size: 30px; color: #4a148c; padding-top: 10px; padding-left: 10px; padding-bottom: 15px;"></span></a>
+
+		<a id="remove"><span class="glyphicon glyphicon-minus-sign" style="font-size: 30px; color: #4a148c; padding-top: 10px; padding-left: 10px; padding-bottom: 15px;"></span></a>
+
+		<span style="font-size: 10px; padding-left: 5px; margin-top: 5px;">*(Maximum 10 persons can book at a time.)</span>
+		</div>
+		<button type="button" class="btn btn-default" style="float: right; margin-top: 10px; margin-right: 40px; background: #4a148c; color: #fff; padding: 5px 30px 5px 25px; font-size: 17px;">BookNow</button>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		
+		function checkRemove() {
+		    if ($('div.abc').length == 1) {
+		        $('#remove').hide();
+		    } else {
+		        $('#remove').show();
+		    }
+		};
+		function checkAdd() {
+		    if ($('div.abc').length == 10) {
+		        $('#add').hide();
+		    } else {
+		        $('#add').show();
+		    }
+		};
+		$(document).ready(function() {
+		    checkRemove()
+		    checkAdd()
+		    $('#add').click(function() {
+		        $('div.abc:last').after($('div.abc:first').clone());
+		        checkAdd();
+		        checkRemove();
+		    });
+		    $('#remove').click(function() {
+		        $('div.abc:last').remove();
+		        checkAdd();
+		        checkRemove();
+		    });
+		});
+
+	</script>
+
+</body>
+</html>
